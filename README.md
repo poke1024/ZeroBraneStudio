@@ -13,7 +13,7 @@ These changes rely on a number of changes in your user.lua config.
 
 ![ZeroBrane OS X screenshot](https://raw.githubusercontent.com/poke1024/ZeroBraneStudio/master/docs/zerobrane-mac-1.png)
 
-The changes for the changes seen above are as follows:
+The config changes for the appearance as seen above are as follows:
 
 >bordersize = 8
 >
@@ -47,3 +47,10 @@ The changes for the changes seen above are as follows:
 >	["16/VALUE-LOCAL"] = "theme-osx/material-design-icons/action/1x_ios/ic_view_quilt_black_24dp",
 >	["16/VALUE-UP"] = "theme-osx/material-design-icons/communication/1x_ios/ic_call_made_black_24dp"
 >}
+
+For the icons, the following packages were used:
+
+- https://github.com/google/material-design-icons
+- http://sekkyumu.deviantart.com/art/Developpers-Icons-63052312
+
+They should be located inside ZeroBraneStudio/zbstudio/res/theme-mac as "material-design-icons" and "sekkyumu" respectively (see the paths in theme.customicons above).
