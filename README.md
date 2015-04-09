@@ -11,6 +11,12 @@ What has been changed:
 
 These changes rely on a number of changes in your user.lua config.
 
+Without the fork changes:
+
+![ZeroBrane OS X screenshot before](https://raw.githubusercontent.com/poke1024/ZeroBraneStudio/master/docs/before.png)
+
+With the fork changes:
+
 ![ZeroBrane OS X screenshot](https://raw.githubusercontent.com/poke1024/ZeroBraneStudio/master/docs/zerobrane-mac-1.png)
 
 The config changes for the appearance as seen above are as follows:
