@@ -28,6 +28,8 @@ The config changes for the appearance as seen above are as follows (expect for t
 >theme.tabartsize = 20
 >
 >theme.panebgcols = {default = {222, 225, 231}}
+>
+>theme.osxselection = true
 
 ## The new icons
 
