@@ -1,32 +1,45 @@
 # Fork Description
 
-A fork of ZeroBrane that adds some cosmetic "OS-X-iness".
-
-What has been changed:
+A fork of ZeroBrane that adds some config options for achieving more cosmetic "OS-X-iness". With the changes, new user.lua-config options have been added that allow the following features to be changed:
 
 - different toolbar, debug, and watch icons
 - tabs without gradients
 - larger tabs
 - panes' background is no longer white
 
-These changes rely on a number of changes in your user.lua config.
+## What does it look like?
 
 Without the fork changes:
 
-![ZeroBrane OS X screenshot before](https://raw.githubusercontent.com/poke1024/ZeroBraneStudio/master/docs/before.png)
+![ZeroBrane OS X screenshot before](https://raw.githubusercontent.com/poke1024/ZeroBraneStudio/master/docs/before-new.png)
 
 With the fork changes:
 
 ![ZeroBrane OS X screenshot](https://raw.githubusercontent.com/poke1024/ZeroBraneStudio/master/docs/zerobrane-mac-1.png)
 
-The config changes for the appearance as seen above are as follows:
+## The config changes
+
+The config changes for the appearance as seen above are as follows (expect for the icons):
 
 >bordersize = 8
 >
 >theme.simpletabart = true
->theme.tabartsize = 20
->theme.panebgcols = {default = {222, 225, 231}}
 >
+>theme.tabartsize = 20
+>
+>theme.panebgcols = {default = {222, 225, 231}}
+
+## The new icons
+
+For the icons, the following free packages were used:
+
+- https://github.com/google/material-design-icons
+- http://sekkyumu.deviantart.com/art/Developpers-Icons-63052312
+
+They should be located inside ZeroBraneStudio/zbstudio/res/theme-mac as "material-design-icons" and "sekkyumu" respectively (see the paths in theme.customicons above).
+
+In order for ZeroBraneStudio to load them, you have to add these paths to your user config file:
+
 >theme.customicons = {
 >	["24/FILE-NEW"] = "theme-osx/material-design-icons/action/1x_ios/ic_note_add_black_24dp",
 >	["24/FILE-OPEN"] = "theme-osx/material-design-icons/editor/1x_ios/ic_insert_drive_file_black_24dp",
@@ -53,10 +66,3 @@ The config changes for the appearance as seen above are as follows:
 >	["16/VALUE-LOCAL"] = "theme-osx/material-design-icons/action/1x_ios/ic_view_quilt_black_24dp",
 >	["16/VALUE-UP"] = "theme-osx/material-design-icons/communication/1x_ios/ic_call_made_black_24dp"
 >}
-
-For the icons, the following packages were used:
-
-- https://github.com/google/material-design-icons
-- http://sekkyumu.deviantart.com/art/Developpers-Icons-63052312
-
-They should be located inside ZeroBraneStudio/zbstudio/res/theme-mac as "material-design-icons" and "sekkyumu" respectively (see the paths in theme.customicons above).
